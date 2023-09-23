@@ -1,0 +1,4 @@
+streamlit==1.27.0
+langchain[llms]==0.0.300
+pandas==2.1.1
+openai==0.28.0
