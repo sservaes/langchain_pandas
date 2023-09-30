@@ -4,6 +4,7 @@ import streamlit as st
 uploaded_file = st.file_uploader("Upload a DOC file", type=["csv", "xlsx", "xls"])
 
 api_key = st.text_input("Enter your OpenAI API Key")
+api_key = st.secrets.openai_credentials.api_key
 
 if uploaded_file is not None:
     file_extension = uploaded_file.name.split(".")[-1].lower()
